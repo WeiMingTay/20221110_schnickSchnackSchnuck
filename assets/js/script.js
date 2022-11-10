@@ -60,7 +60,7 @@ let gewinner = (user, computer) => {
 	rangeOutput.style.display = "none";
 	if (user == "stein") {
 		if (computer == "papier") {
-			displayErgebnis.innerHTML = `${computer} schlägt ${user}. Computer gewinnt diese Runde`;
+			displayErgebnis.innerHTML = `${computer.charAt(0).toUpperCase() + computer.slice(1)} schlägt ${user.charAt(0).toUpperCase()+user.slice(1)}. Computer gewinnt diese Runde`;
 
 			stein.classList.add("verloren");
 			setTimeout(() => stein.classList.remove("verloren"), 500);
@@ -78,7 +78,7 @@ let gewinner = (user, computer) => {
 			stein.classList.add("unentschieden");
 			setTimeout(() => stein.classList.remove("unentschieden"), 500);
 		} else {
-			displayErgebnis.innerHTML = `${user} schlägt ${computer}. Du hast diese Runde gewonnen`;
+			displayErgebnis.innerHTML = `${user.charAt(0).toUpperCase()+user.slice(1)} schlägt ${computer.charAt(0).toUpperCase() + computer.slice(1)}. Du hast diese Runde gewonnen`;
 
 			stein.classList.add("gewonnen");
 			setTimeout(() => stein.classList.remove("gewonnen"), 500);
@@ -88,7 +88,7 @@ let gewinner = (user, computer) => {
 		}
 	} else if (user == "schere") {
 		if (computer == "stein") {
-			displayErgebnis.innerHTML = `${computer} schlägt ${user}. Computer gewinnt diese Runde`;
+			displayErgebnis.innerHTML = `${computer.charAt(0).toUpperCase() + computer.slice(1)} schlägt ${user.charAt(0).toUpperCase()+user.slice(1)}. Computer gewinnt diese Runde`;
 
 			schere.classList.add("verloren");
 			setTimeout(() => schere.classList.remove("verloren"), 500);
@@ -100,7 +100,7 @@ let gewinner = (user, computer) => {
 			schere.classList.add("unentschieden");
 			setTimeout(() => schere.classList.remove("unentschieden"), 500);
 		} else {
-			displayErgebnis.innerHTML = `${user} schlägt ${computer}. Du hast diese Runde gewonnen`;
+			displayErgebnis.innerHTML = `${user.charAt(0).toUpperCase()+user.slice(1)} schlägt ${computer.charAt(0).toUpperCase() + computer.slice(1)}. Du hast diese Runde gewonnen`;
 
 			schere.classList.add("gewonnen");
 			setTimeout(() => schere.classList.remove("gewonnen"), 500);
@@ -110,7 +110,7 @@ let gewinner = (user, computer) => {
 		}
 	} else if (user == "papier") {
 		if (computer == "schere") {
-			displayErgebnis.innerHTML = `${computer} schlägt ${user}. Computer gewinnt diese Runde`;
+			displayErgebnis.innerHTML = `${computer.charAt(0).toUpperCase() + computer.slice(1)} schlägt ${user.charAt(0).toUpperCase()+user.slice(1)}. Computer gewinnt diese Runde`;
 
 			papier.classList.add("verloren");
 			setTimeout(() => papier.classList.remove("verloren"), 500);
@@ -122,7 +122,7 @@ let gewinner = (user, computer) => {
 			papier.classList.add("unentschieden");
 			setTimeout(() => papier.classList.remove("unentschieden"), 500);
 		} else {
-			displayErgebnis.innerHTML = `${user} schlägt ${computer}. Du hast diese Runde gewonnen`;
+			displayErgebnis.innerHTML = `${user.charAt(0).toUpperCase()+user.slice(1)} schlägt ${computer.charAt(0).toUpperCase() + computer.slice(1)}. Du hast diese Runde gewonnen`;
 
 			papier.classList.add("gewonnen");
 			setTimeout(() => papier.classList.remove("gewonnen"), 500);

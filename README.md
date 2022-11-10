@@ -1,6 +1,6 @@
 20221107 Schnick Schnack Schnuck
 
-Link zur Seite: 
+Link zur Seite: https://weimingtay.github.io/20221110_schnickSchnackSchnuck/
 
 # Aufgabenstellung
 
