@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>🪨 ✂️ 📜</title>
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<link
+			rel="icon"
+			href="https://www.miss.at/wp-content/uploads/2017/12/shutterstock_175134956_1458817893380504_v0_l.jpg"
+		/>
+	</head>
+	<body>
+		<header>
+			<h1>Schnick, Schnack, Schnuck</h1>
+		</header>
+		<main>
+			<div id="runden">
+				<h3>Wieviele Runden werden gespielt?</h3>
+				<!-- <div>
+                <input type="radio" name="runden" id="fuenf">
+                <label for="fuenf" name="runden">5</label>
+            </div>
+            <div>
+                <input type="radio" name="runden" id="zehn">
+                <label for="zehn" name="runden">10</label>
+            </div>
+            <div>
+                <input type="radio" name="runden" id="fuenfzehn">
+                <label for="fuenfzehn" name="runden">15</label>
+            </div>
+            <div>
+                <input type="radio" name="runden" id="zwanzig">
+                <label for="zwanzig" name="runden">20</label>
+            </div> -->
+				<div id="runden">
+					<input type="range" min="3" max="20" step="1" id="rangeInput" value="10"/>
+					<span id="rangeOutput">10</span>
+				</div>
+				<div>
+					<p id="rundenUebrig"></p>
+				</div>
+			</div>
+			<div id="ergebnis">
+				<fieldset>
+					<legend id="userName">User</legend>
+					<legend>Computer</legend>
+					<div id="displayZaehler">
+						<span id="userScore">0</span>:<span id="computerScore">0</span>
+						<!-- <ul id="userScore"><li></li>
+							<li></li></ul>:<ul id="computerScore"><li></li>
+								<li></li>
+								<li></li><li></li>
+						<li></li></ul> -->
+					</div>
+				</fieldset>
+			</div>
+			<div>
+				<p id="displayErgebnis">Lass die Spiele beginnen</p>
+			</div>
+			<div id="auswahl">
+				<button id="rock" value="stein">🪨</button>
+				<button id="paper" value="papier">📜</button>
+				<button id="scissors" value="schere">✂️</button>
+			</div>
+			<p id="motivationalSpeech">Make your move.</p>
+			<button id="restart">restart</button>
+		</main>
+		<script src="assets/js/script.js"></script>
+	</body>
+</html>
